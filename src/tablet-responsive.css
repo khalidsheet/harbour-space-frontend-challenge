@@ -1,0 +1,26 @@
+@media only screen and (max-width: 768px) {
+  .container {
+    max-width: 768px !important;
+  }
+  .mesh-background img {
+    display: none;
+  }
+
+  .introduction,
+  .application-status {
+    width: 240px !important;
+  }
+
+  .application-closes,
+  .application-more-info {
+    width: 100% !important;
+  }
+
+  .application-closes .app-value {
+    font-size: 1em !important;
+  }
+
+  .application-more-info .right-section {
+    margin-left: 40px;
+  }
+}
