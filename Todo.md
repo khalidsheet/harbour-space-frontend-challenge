@@ -1,8 +1,8 @@
-- [ ] Layout
-- [ ] Header Nav
-- [ ] Hero Section
-  - [ ] Course Intro and CTA
-  - [ ] Application Status
+- [x] Layout
+- [x] Header Nav
+- [x] Hero Section
+  - [x] Course Intro and CTA
+  - [x] Application Status
 - [ ] About the apprenticeship
 - [ ] cards
 - [ ] testimonials
