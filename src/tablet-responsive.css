@@ -1,0 +1,78 @@
+@media only screen and (min-width: 426px) and (max-width: 1024px) {
+  .container {
+    max-width: 768px !important;
+  }
+  .mesh-background img {
+    display: none;
+  }
+
+  .introduction,
+  .application-status {
+    flex: 1 !important;
+  }
+
+  .introduction .section-title h3 {
+    font-size: 1.8em !important;
+    line-height: 1.6em;
+  }
+
+  /* .introduction .section-title .img-circle {
+    width: 140px;
+    top: -20px;
+    right: -40px;
+  } */
+
+  .introduction .section-title .subtitle {
+    font-size: 1.2em;
+  }
+
+  .introduction .section-title .content,
+  .introduction .section-title .position {
+    font-size: 1em;
+  }
+
+  .application-closes,
+  .application-more-info {
+    width: 80% !important;
+  }
+
+  .application-closes .app-value {
+    font-size: 1em !important;
+  }
+
+  .application-more-info .right-section {
+    margin-left: 40px;
+  }
+
+  /* 
+    About section
+  */
+  img.student-image {
+    width: 80%;
+  }
+
+  .about-content-text {
+    width: 100% !important;
+  }
+
+  .about-content-text .content-title {
+    font-size: 2.2em !important;
+  }
+
+  .about-content-text .content-body {
+    font-size: 1.2em !important;
+  }
+
+  .commitment-group {
+    flex-direction: column;
+  }
+
+  .cards .card {
+    width: 86% !important;
+  }
+
+  .scholarship-value .middle-line {
+    margin-top: 524px !important;
+    margin-bottom: 86px !important;
+  }
+}
