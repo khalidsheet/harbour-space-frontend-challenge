@@ -1,0 +1,178 @@
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 100px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.introduction,
+.application-status {
+  width: 450px;
+  padding: 24px 48px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  text-align: left;
+}
+
+.application-status {
+  align-self: self-start;
+  padding-top: 76px;
+  flex-direction: column;
+}
+
+.section-title {
+  position: relative;
+}
+
+img.img-circle {
+  position: absolute;
+  right: -10px;
+  top: -20px;
+  transform: rotate(20deg);
+}
+
+.section-title h3 {
+  font-size: 48px;
+  color: var(--primary-color);
+  line-height: 56px;
+  font-style: normal;
+  letter-spacing: -0.6px;
+}
+
+.section-title .subtitle {
+  margin: 20px 0;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 32px;
+  font-style: normal;
+  letter-spacing: -0.33px;
+  color: #535353;
+}
+
+.content {
+  margin: 20px 0;
+  font-size: 22px;
+  line-height: 32px;
+  font-style: normal;
+  letter-spacing: -0.33px;
+  color: #909090;
+}
+
+.position {
+  font-style: normal;
+  font-size: 22px;
+  line-height: 32px;
+  color: #535353;
+}
+
+.apply-cta {
+  margin-top: 40px;
+}
+
+.apply-cta button {
+  padding: 10px 30px;
+  border-radius: 30px;
+  border: none;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 18px;
+  height: 48px;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.zeptolab-title {
+  display: flex;
+  height: 80px;
+  align-items: center;
+  flex-direction: column;
+  padding: 10px 0;
+}
+
+.zeptolab-logo {
+  float: left;
+  margin-right: 24px;
+}
+
+.zeptolab-title span {
+  display: block;
+}
+
+.zeptolab-title span.by {
+  font-size: 18px;
+  color: #a0a0a0;
+  margin-bottom: 10px;
+  line-height: 24px;
+}
+
+.zeptolab-title span.value {
+  font-size: 27px;
+  color: #4b4b4b;
+}
+
+.fix {
+  clear: both;
+}
+
+.application-closes,
+.application-more-info {
+  border: 1px solid #dadada;
+  min-height: 100px;
+  margin-bottom: 30px;
+  border-radius: 3px;
+  width: 400px;
+}
+
+.application-closes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 30px;
+  color: #535353;
+}
+
+.application-closes .app-title {
+  font-size: 16px;
+  color: var(--primary-color);
+  margin-bottom: 16px;
+}
+
+.application-closes .app-value {
+  font-size: 27px;
+  line-height: 24px;
+  font-weight: 40;
+  color: #535353;
+}
+
+.right-section {
+  margin-left: 100px;
+}
+
+.application-more-info {
+  display: flex;
+  padding: 30px;
+  position: relative;
+  background-color: #fff;
+}
+
+.card-info {
+  margin-bottom: 24px;
+}
+
+.card-title {
+  color: var(--primary-color);
+}
+
+.card-value {
+  color: #535353;
+}
+
+.mesh-background img {
+  position: absolute;
+  left: 70px;
+  top: 90px;
+  z-index: -1;
+}
