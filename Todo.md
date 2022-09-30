@@ -1,0 +1,10 @@
+- [ ] Layout
+- [ ] Header Nav
+- [ ] Hero Section
+  - [ ] Course Intro and CTA
+  - [ ] Application Status
+- [ ] About the apprenticeship
+- [ ] cards
+- [ ] testimonials
+- [ ] Frequently asked questions
+- [ ] Sticky Bottom Nav
