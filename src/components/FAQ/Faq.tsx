@@ -23,13 +23,13 @@ export default function Faq() {
           </div>
         </div>
       </div>
-      <div className="line"></div>
       <div className="body">
         <div className="collapsibles">
-          <Collapse />
-          <Collapse />
-          <Collapse />
-          <Collapse />
+          <div className="line"></div>
+          <Collapse title="What are my obligations?" />
+          <Collapse title="Do I get a job placement upon graduation?" />
+          <Collapse title="What if I want to start my own company?" />
+          <Collapse title="Do I need a visa?" />
         </div>
       </div>
     </div>

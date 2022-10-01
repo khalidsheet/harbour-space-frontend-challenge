@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import "./Collapse.css";
 import { Collapse as ReactCollapse } from "react-collapse";
+import { ICollapse } from "./interfaces";
 
-export default function Collapse() {
+export default function Collapse({ title }: ICollapse) {
   const [isOpened, setIsOpened] = useState(false);
   return (
     <div className="collapsible">
       <div className="header">
         <div className="type">Program Condisions</div>
-        <div className="title">What are my obligations?</div>
+        <div className="title">{title}</div>
         <div className="button">
           <button
             className="button-micro"
@@ -45,6 +46,7 @@ export default function Collapse() {
           </p>
         </div>
       </ReactCollapse>
+      <div className="line"></div>
     </div>
   );
 }
