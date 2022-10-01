@@ -1,0 +1,58 @@
+.collapsible .header {
+  display: flex;
+  justify-content: space-around;
+}
+
+.collapsible .header div {
+  padding: 0 38px;
+}
+
+/* .collapsible .header .title {
+    flex: 2;
+  } */
+
+.collapsible .header .button {
+  justify-self: flex-end;
+  text-align: right;
+}
+
+.collapsible .header .type {
+  color: var(--primary-color);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.collapsible .header .title {
+  font-size: 22px !important;
+  font-weight: 600;
+  color: #6a6a6a;
+}
+
+.collapsible .content {
+  max-width: 600px;
+  margin-left: 310px;
+  overflow: hidden;
+}
+
+.button:hover .content {
+  height: 1000px;
+}
+
+button.button-micro {
+  width: 48px;
+  height: 48px;
+  border-radius: 24px;
+  border: none;
+  background-color: #fff;
+  color: #dadada;
+  border: 1px solid #dadada;
+  font-size: 24px;
+}
+
+button.button-micro:hover {
+  cursor: pointer;
+}
+
+.ReactCollapse--collapse {
+  transition: height 500ms;
+}

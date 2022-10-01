@@ -1,0 +1,96 @@
+.faq {
+  padding: 100px 0;
+}
+
+.faq .header {
+  display: flex;
+}
+
+.faq .header .title {
+  text-transform: inherit;
+  font-size: 48px;
+  font-weight: 600;
+  flex: 1;
+}
+
+.faq .header .filter {
+  flex: 2;
+  align-self: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.faq .header .filter span {
+  color: #6a6a6a;
+  font-size: 16px;
+  line-height: 24px;
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.faq .header .filter .actual-filter {
+  position: relative !important;
+  padding: 12px 24px;
+  font-size: 18px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.faq .header .filter .actual-filter::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: var(--primary-color);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+  top: 10px;
+  position: absolute;
+  right: 24px;
+  top: 26px;
+}
+
+.select {
+  height: 60px;
+  overflow: hidden;
+  transition: height 0.3s ease-in;
+  background-color: #fff;
+  position: absolute;
+  top: -18px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 28px;
+  overflow: hidden;
+  color: var(--primary-color);
+  border: 1px solid #dadada;
+}
+
+.select li {
+  list-style: none;
+  color: #6a6a6a;
+  margin-bottom: 16px;
+}
+
+.select li:nth-child(1) {
+  color: var(--primary-color);
+  margin-top: 16px;
+}
+
+.select:hover {
+  height: 280px;
+  transition: height 0.3s ease-out;
+  cursor: pointer;
+}
+
+.faq .line {
+  height: 1px;
+  width: 100%;
+  background-color: #dadada;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.faq .body {
+  margin-top: 100px;
+}
