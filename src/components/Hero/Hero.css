@@ -174,3 +174,11 @@ img.img-circle {
   top: 90px;
   z-index: -1;
 }
+
+.application-status.mobile {
+  display: none;
+}
+
+.mobile-only {
+  display: none;
+}

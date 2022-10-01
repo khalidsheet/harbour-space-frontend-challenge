@@ -1,4 +1,5 @@
 @import url("./tablet-responsive.css");
+@import url("./mobile-responsive.css");
 
 :root {
   --background-color: #ffffff;

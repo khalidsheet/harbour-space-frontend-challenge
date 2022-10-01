@@ -1,0 +1,275 @@
+@media only screen and (max-width: 425px) {
+  .apply-now {
+    display: none !important;
+  }
+
+  .header-container {
+    padding: 0 24px !important;
+  }
+
+  .header-container .title {
+    font-size: 16px;
+  }
+
+  .header-container .title .small {
+    font-size: 11px;
+  }
+
+  .container {
+    max-width: 376px !important;
+  }
+  .mesh-background img {
+    display: none;
+  }
+
+  .hero {
+    display: flex !important;
+    flex-direction: column;
+  }
+
+  .hero .main-title {
+    position: relative;
+  }
+
+  .hero .main-title h3 {
+    font-size: 35px !important;
+  }
+
+  .hero .main-title img {
+    top: -70px;
+    right: 27px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .introduction,
+  .application-status {
+    padding: 24px !important;
+    width: 345px !important;
+  }
+
+  .application-status {
+    display: none !important;
+  }
+
+  .application-status.mobile {
+    display: flex !important;
+    padding: 0px !important;
+  }
+
+  .application-status.mobile .powered-by {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .application-status.mobile .powered-by .zeptolab-title {
+    display: inline;
+    height: 24px !important;
+  }
+
+  .application-status.mobile .powered-by .zeptolab-title * {
+    display: inline !important;
+    font-size: 16px;
+    margin-right: 10px;
+  }
+
+  .application-status.mobile .powered-by .zeptolab-logo {
+    width: 56px;
+    margin-bottom: 24px;
+  }
+
+  .section-title {
+    max-width: 100%;
+  }
+
+  .mobile-only {
+    display: block !important;
+  }
+
+  .section-title .subtitle,
+  .section-title .content,
+  .section-title .position,
+  .section-title .apply-cta {
+    padding: 0 24px !important;
+    font-size: 18px !important;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    padding: 24px !important;
+  }
+
+  .about .image-overview {
+    z-index: 4 !important;
+    background-color: #fff;
+  }
+
+  .about .about-content {
+    flex-direction: column;
+    padding: 0 !important;
+  }
+
+  .image-overview img {
+    width: 100%;
+    background-color: #fff !important;
+    z-index: 1 !important;
+  }
+
+  .about-content-text {
+    position: relative !important;
+    z-index: 1 !important;
+    background-color: #fff !important;
+    padding: 0 30px !important;
+  }
+
+  .about-content-text::before {
+    content: "";
+    position: absolute;
+    top: -180px;
+    left: -40px;
+    right: -50px;
+    height: 470px;
+    z-index: -1;
+    background-color: var(--primary-color);
+  }
+
+  .about-content-text .content-title {
+    font-size: 35px !important;
+    background-color: #ffff;
+    margin: 0 !important;
+    padding-bottom: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .about-content-text .content-body {
+    background-color: #ffff;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px !important;
+  }
+
+  .about .cards {
+    flex-direction: column;
+  }
+
+  .about .cards .card {
+    width: calc(100% - 24px * 2) !important;
+    padding: 45px 24px;
+  }
+
+  .about .cards .card.scholarship-value {
+    padding: 24px;
+    border: none;
+  }
+
+  .about .cards .card.scholarship-value .card-fee {
+    font-size: 18px;
+    margin-bottom: 24px;
+  }
+
+  .about .cards .card.scholarship-value .middle-line {
+    display: none;
+  }
+
+  .swiper {
+    height: 610px;
+    position: relative !important;
+  }
+
+  .test {
+    width: 340px;
+    height: 500px !important;
+  }
+
+  .testimonials {
+    margin-bottom: 24px !important;
+  }
+
+  .testimonials::before {
+    content: "";
+    position: absolute;
+    background-color: var(--primary-color);
+    left: -60px !important;
+    right: -40px;
+    top: -120px;
+    height: 300px;
+    z-index: -1;
+  }
+
+  .test .header {
+    padding: 24px !important;
+  }
+
+  .bg-image-mesh {
+    display: none;
+  }
+
+  .test .body {
+    padding: 48px 24px !important;
+    font-size: 24px !important;
+  }
+
+  .test .footer {
+    padding: 0 0 0 24px !important;
+  }
+
+  .test .user-info .image img {
+    width: 56px;
+    z-index: 4 !important;
+  }
+
+  .test .user-info .info * {
+    font-size: 16px !important;
+  }
+
+  .faq .header,
+  .faq .filter {
+    flex-direction: column;
+  }
+
+  .faq .filter {
+    width: 90% !important;
+    display: block !important;
+    margin: 0 24px !important;
+  }
+
+  .faq .filter span {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  .faq .header .title {
+    font-size: 35px !important;
+    margin-bottom: 24px;
+  }
+
+  .faq .body .collapsibles .line:nth-child(1) {
+    display: none;
+  }
+
+  .faq .body .collapsible .header {
+    flex-direction: row;
+  }
+
+  .faq .body .collapsible .header .title {
+    font-size: 18px !important;
+    padding: 0 0 0 24px !important;
+    font-weight: 400;
+  }
+
+  .faq .body .collapsible .content {
+    margin-left: 32px !important;
+    width: 300px;
+    font-size: 18px;
+  }
+
+  .faq .body .collapsible .header .type {
+    display: none;
+  }
+
+  .faq .body .collapsible .line {
+    margin: 24px 0 !important;
+  }
+}

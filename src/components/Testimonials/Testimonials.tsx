@@ -18,11 +18,22 @@ export default function Testimonials() {
       <Swiper
         freeMode={true}
         draggable
-        slidesPerView={1.6}
         centeredSlides
+        slidesPerView={1.6}
         spaceBetween={40}
         autoplay
         rewind
+        breakpoints={{
+          375: {
+            slidesPerView: 1,
+          },
+          1440: {
+            slidesPerView: 1.6,
+          },
+          1024: {
+            slidesPerView: 1.6,
+          },
+        }}
       >
         <SwiperSlide>
           <div className="test">
