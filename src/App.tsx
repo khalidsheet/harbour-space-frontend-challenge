@@ -1,6 +1,7 @@
 import React from "react";
 import "./App.css";
 import About from "./components/About/About";
+import BottomNav from "./components/BottomNav/BottomNav";
 import Faq from "./components/FAQ/Faq";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
@@ -18,6 +19,7 @@ function App() {
       <div className="container">
         <Faq />
       </div>
+      <BottomNav />
     </div>
   );
 }

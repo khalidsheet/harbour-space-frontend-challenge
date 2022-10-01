@@ -1,4 +1,4 @@
-@media only screen and (min-width: 426px) and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   .container {
     max-width: 768px !important;
   }
@@ -87,5 +87,9 @@
   .faq .header .title {
     font-size: 24px !important;
     margin-left: 10px;
+  }
+
+  .bottomNav {
+    display: none !important;
   }
 }
