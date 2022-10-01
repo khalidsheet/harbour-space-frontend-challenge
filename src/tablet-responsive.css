@@ -16,12 +16,6 @@
     line-height: 1.6em;
   }
 
-  /* .introduction .section-title .img-circle {
-    width: 140px;
-    top: -20px;
-    right: -40px;
-  } */
-
   .introduction .section-title .subtitle {
     font-size: 1.2em;
   }
@@ -74,5 +68,14 @@
   .scholarship-value .middle-line {
     margin-top: 524px !important;
     margin-bottom: 86px !important;
+  }
+
+  .testimonial .body {
+    padding: 60px 60px !important;
+    font-size: 18px !important;
+  }
+
+  .testimonial .footer {
+    padding: 0 60px !important;
   }
 }

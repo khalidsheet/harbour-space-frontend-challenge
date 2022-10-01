@@ -1,0 +1,27 @@
+.testimonials {
+  position: relative;
+  margin: 200px auto;
+}
+
+.swiper-slide {
+  height: 480px;
+}
+
+.testimonials .bg-image-mesh img {
+  position: absolute;
+  top: -30%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+  width: 80vw;
+}
+
+.test {
+  background: #fbfbfb;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  height: 460px;
+  border: 1px solid #dadada;
+  border-radius: 4px;
+}
