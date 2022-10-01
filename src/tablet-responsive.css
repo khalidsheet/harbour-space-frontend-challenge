@@ -78,4 +78,14 @@
   .testimonial .footer {
     padding: 0 60px !important;
   }
+
+  .faq {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .faq .header .title {
+    font-size: 24px !important;
+    margin-left: 10px;
+  }
 }
