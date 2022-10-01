@@ -69,4 +69,13 @@
     margin-top: 524px !important;
     margin-bottom: 86px !important;
   }
+
+  .testimonial .body {
+    padding: 60px 60px !important;
+    font-size: 18px !important;
+  }
+
+  .testimonial .footer {
+    padding: 0 60px !important;
+  }
 }
