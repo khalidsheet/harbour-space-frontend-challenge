@@ -78,9 +78,11 @@
 }
 
 .select:hover {
-  height: 280px;
-  transition: height 0.3s ease-out;
+  height: 250px !important;
+  transition: all 0.3s ease-out;
   cursor: pointer;
+  overflow: auto;
+  z-index: 4;
 }
 
 .faq .line {

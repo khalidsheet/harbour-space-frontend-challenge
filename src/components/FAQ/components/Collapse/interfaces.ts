@@ -1,4 +1,6 @@
+import { Answer } from "./../../../../services/interfaces";
 export interface ICollapse {
   title: string;
-  content?: string;
+  content?: Answer[];
+  type?: string;
 }

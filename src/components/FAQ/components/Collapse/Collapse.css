@@ -1,6 +1,9 @@
+.collapsible {
+  display: flex;
+}
+
 .collapsible .header {
   display: flex;
-  justify-content: space-around;
 }
 
 .collapsible .header div {
@@ -12,10 +15,15 @@
   text-align: right;
 }
 
-.collapsible .header .type {
+.collapsible .type {
   color: var(--primary-color);
   font-size: 22px;
   font-weight: 600;
+  flex: 30%;
+}
+
+.other {
+  flex: 100%;
 }
 
 .collapsible .header .title {
@@ -26,8 +34,8 @@
 
 .collapsible .content {
   max-width: 600px;
-  margin-left: 310px;
   overflow: hidden;
+  margin-left: 32px;
 }
 
 .button {

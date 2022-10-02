@@ -1,9 +1,19 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import { useGlobalState } from "../../state/global-state";
 import Collapse from "./components/Collapse/Collapse";
 
 import "./Faq.css";
 
 export default function Faq() {
+  const response = useGlobalState((state) => state.response);
+  const [faqs, setFaqs] = useState([]);
+  const [category, setCategory] = useState(0);
+
+  const handleCategoryChange = (categoryIndex: number) => {
+    console.log(category);
+    setCategory(categoryIndex);
+  };
+
   return (
     <div className="faq">
       <div className="header">
@@ -12,13 +22,20 @@ export default function Faq() {
           <span>filter by:</span>
           <div className="actual-filter">
             <span>selected Text</span>
-            <ul className="select">
-              <li>Program Conditions</li>
-              <li>All</li>
-              <li>Admissions</li>
-              <li>Harbour.Space</li>
-              <li>SCG</li>
-              <li>Living in Bangkok</li>
+            <ul
+              className="select"
+              style={{
+                height:
+                  (response?.scholarship.faqs.categories.length || 1) + 1 * 60,
+              }}
+            >
+              {response?.scholarship.faqs.categories.map((category, i) => {
+                return (
+                  <li key={i} onClick={() => handleCategoryChange(i)}>
+                    {category}
+                  </li>
+                );
+              })}
             </ul>
           </div>
         </div>
@@ -26,10 +43,21 @@ export default function Faq() {
       <div className="body">
         <div className="collapsibles">
           <div className="line"></div>
-          <Collapse title="What are my obligations?" />
-          <Collapse title="Do I get a job placement upon graduation?" />
-          <Collapse title="What if I want to start my own company?" />
-          <Collapse title="Do I need a visa?" />
+          {response?.scholarship.faqs.items
+            .filter(
+              (item) =>
+                item.type === response?.scholarship.faqs.categories[category]
+            )
+            .map((item, i) => {
+              return (
+                <Collapse
+                  key={i}
+                  type={item.type}
+                  title={item.question}
+                  content={item.answer}
+                />
+              );
+            })}
         </div>
       </div>
     </div>

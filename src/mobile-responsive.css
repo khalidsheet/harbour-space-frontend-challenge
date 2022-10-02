@@ -16,7 +16,7 @@
   }
 
   .container {
-    max-width: 376px !important;
+    max-width: 375px !important;
   }
   .mesh-background img {
     display: none;
@@ -127,8 +127,8 @@
     content: "";
     position: absolute;
     top: -180px;
-    left: -40px;
-    right: -50px;
+    left: 0px;
+    right: 0px;
     height: 470px;
     z-index: -1;
     background-color: var(--primary-color);
@@ -191,8 +191,8 @@
     content: "";
     position: absolute;
     background-color: var(--primary-color);
-    left: -60px !important;
-    right: -40px;
+    left: 0 !important;
+    right: 0;
     top: -120px;
     height: 300px;
     z-index: -1;
@@ -265,7 +265,7 @@
     font-size: 18px;
   }
 
-  .faq .body .collapsible .header .type {
+  .faq .body .collapsible .type {
     display: none;
   }
 

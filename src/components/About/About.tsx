@@ -1,7 +1,10 @@
 import React from "react";
+import { useGlobalState } from "../../state/global-state";
 import "./About.css";
 
 export default function About() {
+  const response = useGlobalState((state) => state.response);
+
   return (
     <div className="about">
       <div className="about-content">
@@ -11,34 +14,56 @@ export default function About() {
         <div className="about-content-text">
           <div className="content-title">About the apprenticeship</div>
           <div className="content-body">
-            Our scholarships are designed to give talented and driven young
-            people from any background access to top-class education, experience
-            and network. We offer a fully-funded master’s degree alongside an
-            apprenticeship and a guaranteed job upon graduation.
+            {response?.scholarship.about.map((paragraph) => {
+              return <p style={{ marginTop: 0 }}>{paragraph.data}</p>;
+            })}
           </div>
         </div>
       </div>
       <div className="cards">
         <div className="card scholarship-value">
           <div className="card-title text-primary">Scholarship value</div>
-          <div className="card-fee text-secondary">&euro;31,300</div>
+          <div className="card-fee text-secondary">
+            &euro;
+            {new Intl.NumberFormat("en").format(
+              response?.scholarship.total_value || 0
+            )}
+          </div>
           <div className="middle-line"></div>
           <div className="additional-info">
             <div className=" left-section">
               <div className="card-info tuition-covered">
                 <div className="card-title">Tuition covered</div>
-                <div className="card-value text-secondary">&euro;20,900</div>
+                <div className="card-value text-secondary">
+                  &euro;
+                  {new Intl.NumberFormat("en").format(
+                    response?.scholarship.tuition || 0
+                  )}
+                </div>
               </div>
               <div className="card-info remaining">
                 <div className="card-title">Remaining</div>
-                <div className="card-value text-secondary">&euro;2,000</div>
+                <div className="card-value text-secondary">
+                  &euro;
+                  {new Intl.NumberFormat("en").format(
+                    response?.scholarship.remaining || 0
+                  )}
+                </div>
               </div>
             </div>
             <div className="right-section">
               <div className=" duration">
                 <div className="card-title">Living stipend</div>
                 <div className="card-value text-secondary">
-                  &euro;8,400 (&euro;700/month)
+                  &euro;
+                  {new Intl.NumberFormat("en").format(
+                    response?.scholarship.stipend_per_year || 0
+                  )}{" "}
+                  (&euro;
+                  {new Intl.NumberFormat("en").format(
+                    response?.scholarship.stipend_per_month || 0
+                  )}
+                  /month)
                 </div>
               </div>
             </div>
@@ -48,21 +73,22 @@ export default function About() {
           <div className="commitment-group">
             <div className="card study-commitment">
               <div className="card-title text-primary">Study commitment</div>
-              <div className="subtitle text-secondary">3 hours / day</div>
+              <div className="subtitle text-secondary">
+                {response?.scholarship.study_commitment} hours / day
+              </div>
               <div className="line"></div>
               <div className="description text-secondary">
-                You will complete 15 modules to graduate. Daily classes are 3
-                hours, plus coursework to complete in your own time.{" "}
+                {response?.scholarship.study_commitment_text}
               </div>
             </div>
             <div className="card work-commitment">
               <div className="card-title text-primary">Work commitment</div>
-              <div className="subtitle text-secondary">4 hours / day</div>
+              <div className="subtitle text-secondary">
+                {response?.scholarship.internship_commitment} hours / day
+              </div>
               <div className="line"></div>
               <div className="description text-secondary">
-                Immerse yourself in the professional world during your
-                apprenticeship. You’ll learn the ropes from the best and get to
-                apply your newly acquired knowledge in the field from day one.{" "}
+                {response?.scholarship.internship_commitment_text}{" "}
               </div>
             </div>
           </div>
