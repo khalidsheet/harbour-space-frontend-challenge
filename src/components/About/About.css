@@ -26,6 +26,7 @@
   line-height: 32px;
   letter-spacing: -0.33px;
   color: #535353;
+  font-weight: 300;
 }
 
 .cards {
@@ -67,10 +68,12 @@
 
 .card-fee {
   font-size: 48px;
+  font-weight: 300;
 }
 
 .card .subtitle {
   font-size: 26px;
+  font-weight: 300;
 }
 
 .card .line {
@@ -83,7 +86,7 @@
 
 .description {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 24px;
 }
 
