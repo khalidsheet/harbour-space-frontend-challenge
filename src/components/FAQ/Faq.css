@@ -51,7 +51,7 @@
 }
 
 .select {
-  height: 60px;
+  height: 50px !important;
   overflow: hidden;
   transition: height 0.3s ease-in;
   background-color: #fff;

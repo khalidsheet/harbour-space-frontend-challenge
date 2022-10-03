@@ -43,20 +43,22 @@ img.img-circle {
 .section-title .subtitle {
   margin: 20px 0;
   font-size: 22px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 32px;
   font-style: normal;
   letter-spacing: -0.33px;
   color: #535353;
 }
 
-.content {
+.content,
+.content p {
   margin: 20px 0;
   font-size: 22px;
   line-height: 32px;
   font-style: normal;
   letter-spacing: -0.33px;
   color: #909090;
+  font-weight: 300;
 }
 
 .position {
@@ -64,6 +66,7 @@ img.img-circle {
   font-size: 22px;
   line-height: 32px;
   color: #535353;
+  font-weight: 300;
 }
 
 .apply-cta {
@@ -166,6 +169,7 @@ img.img-circle {
 
 .card-value {
   color: #535353;
+  font-weight: 300;
 }
 
 .mesh-background img {

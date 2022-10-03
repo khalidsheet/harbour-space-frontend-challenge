@@ -25,3 +25,9 @@
   border: 1px solid #dadada;
   border-radius: 4px;
 }
+
+.test .body {
+  font-weight: 300;
+  font-size: 26px;
+  line-height: 35px;
+}
