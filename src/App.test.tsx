@@ -1,5 +1,7 @@
 import React from "react";
-import { render, screen } from "@testing-library/react";
-import App from "./App";
+import { getScholarshipDetails } from "./services/getScholarshipDetails";
 
-test("renders learn react link", () => {});
+test("api response", async () => {
+  const response = await getScholarshipDetails();
+  expect(response?.data).toBeDefined();
+});

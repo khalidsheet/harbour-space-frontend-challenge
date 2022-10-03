@@ -15,7 +15,7 @@ export default function Hero() {
               src="../icons/interaction-desgin-circle.png"
               alt=""
             />
-            <h3>{response?.scholarship?.name}</h3>
+            <h3 data-testid="hero-title">{response?.scholarship?.name}</h3>
           </div>
           <div className="application-status mobile">
             <div className="powered-by">
