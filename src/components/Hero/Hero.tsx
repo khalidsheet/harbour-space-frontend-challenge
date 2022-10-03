@@ -85,8 +85,8 @@ export default function Hero() {
             A fully funded work-study program to launch your tech career
           </div>
           <div className="content">
-            {response?.scholarship.description.map((paragraph) => {
-              return <p>{paragraph.data}</p>;
+            {response?.scholarship.description.map((paragraph, i) => {
+              return <p key={i}>{paragraph.data}</p>;
             })}
             {/* <p className="mobile-only">
               Scholarship candidates will receive full financial support to
